@@ -1,7 +1,7 @@
 {
   "ci": {
     "collect": {
-      "url": ["http://127.0.0.1:4000/", "http://127.0.0.1:4000/about/"],
+      "url": ["http://127.0.0.1:4000/"],
       "numberOfRuns": 2,
       "staticDistDir": "./_site"
     },
