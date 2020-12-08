@@ -1,0 +1,12 @@
+{
+  "name": "jekyll-lighthouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "bundle exec jekyll build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
