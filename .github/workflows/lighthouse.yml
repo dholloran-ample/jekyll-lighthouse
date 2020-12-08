@@ -11,4 +11,4 @@ jobs:
       - run: bundle install
       - run: npm run build
       - run: pwd
-      - run: lhci autorun --config=/.github/lighthouse/lighthouserc.json
+      - run: lhci autorun --config=.github/lighthouse/lighthouserc.json
