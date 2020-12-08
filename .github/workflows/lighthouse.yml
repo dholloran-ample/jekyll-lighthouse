@@ -12,3 +12,12 @@ jobs:
       - run: npm run build
       - run: pwd
       - run: lhci autorun --config=.github/lighthouse/lighthouserc.json
+      - uses: actions/cache@v2
+        with:
+          path: |
+            vendor/bundle
+            **/node_modules
+            **/.jekyll-cache
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
