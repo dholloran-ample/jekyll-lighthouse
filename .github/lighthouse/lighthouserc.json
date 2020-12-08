@@ -1,11 +1,7 @@
 {
   "ci": {
     "collect": {
-      "url": [
-        "http://127.0.0.1:4000/jekyll/update/2020/12/08/welcome-to-jekyll.html",
-        "http://127.0.0.1:4000/",
-        "http://127.0.0.1:4000/about/"
-      ],
+      "url": ["http://127.0.0.1:4000/", "http://127.0.0.1:4000/about/"],
       "numberOfRuns": 2,
       "staticDistDir": "./_site"
     },
