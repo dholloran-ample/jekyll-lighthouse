@@ -5,12 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Running Page Speed Insights
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Running Page Speed Insights
-        uses: ./ # Uses an action in the root directory
-        id: psi
-        with:
-          url: "https://www.crossroads.net"
-          threshold: 85
-          strategy: desktop
+      - uses: actions/checkout@v2
+      - name: Page Speed Insights
+        uses: JakePartusch/psi-action@v1
