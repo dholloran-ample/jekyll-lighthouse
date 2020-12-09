@@ -10,4 +10,4 @@ jobs:
       - run: npm install && npm install -g @lhci/cli@0.6.x
       - run: bundle install
       - run: npm run build
-      - run: lhci autorun --config=.github/lighthouse/lighthouserc.json
+      # - run: lhci autorun --config=.github/lighthouse/lighthouserc.json
