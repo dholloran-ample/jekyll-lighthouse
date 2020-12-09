@@ -6,5 +6,10 @@ jobs:
     name: Running Page Speed Insights
     steps:
       - uses: actions/checkout@v2
-      - name: Page Speed Insights
-        uses: JakePartusch/psi-action@v1
+      - name: Running Page Speed Insights
+        uses: jakepartusch/psi-action@v1
+        id: psi
+        with:
+          url: "https://www.crossroads.net"
+          threshold: 70
+          strategy: desktop
